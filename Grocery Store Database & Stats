@@ -1,0 +1,28 @@
+--Create a grocery store database
+
+CREATE TABLE grocery_store (id INTEGER PRIMARY KEY, items TEXT, price INTEGER, aisle INTEGER, color TEXT);
+
+INSERT INTO grocery_store VALUES (1, "bananas", 2, 4, "yellow");
+INSERT INTO grocery_store VALUES (2, "apples", 1.5, 4, "red");
+INSERT INTO grocery_store VALUES (3, "chicken", 5, 2, "pink");
+INSERT INTO grocery_store VALUES (4, "beef", 4, 2, "red");
+INSERT INTO grocery_store VALUES (5, "vegan meat", 7, 2, "brown");
+INSERT INTO grocery_store VALUES (6, "lettuce", 3, 1, "green");
+INSERT INTO grocery_store VALUES (7, "carrots", 1, 1, "orange");
+INSERT INTO grocery_store VALUES (8, "sourdough", 4, 3, "white");
+INSERT INTO grocery_store VALUES (9, "wheat bread", 3, 3, "brown");
+INSERT INTO grocery_store VALUES (10, "onion", 1, 1, "yellow");
+INSERT INTO grocery_store VALUES (11, "blue berries", 3, 4, "blue");
+INSERT INTO grocery_store VALUES (12, "black beans", 2, 5, "black");
+INSERT INTO grocery_store VALUES (13, "pinto beans", 2, 5, "brown");
+INSERT INTO grocery_store VALUES (14, "tortillas", 3, 3, "white");
+INSERT INTO grocery_store VALUES (15, "oranges", 1, 4, "orange");
+
+--display the database ordered by price. 
+SELECT * FROM grocery_store ORDER BY price;
+
+--did this one just because
+SELECT SUM(price) FROM grocery_store;
+
+--display at least one statistic
+SELECT AVG(price) FROM grocery_store;
